@@ -1,0 +1,108 @@
+/* Google Font import kiya hai achchhi typography ke liye */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Soft Gradient Background */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Glassmorphism Effect Counter Card */
+.counter-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+.counter-card:hover {
+    transform: translateY(-5px); /* Hover karne par card thoda upar uthega */
+}
+
+.counter-card h1 {
+    color: #4a4a4a;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Number Display with Gradient Text */
+#count {
+    font-size: 72px;
+    font-weight: 700;
+    margin: 15px 0 25px 0;
+    background: linear-gradient(135deg, #4a00e0, #8e2de2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Buttons Layout */
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* Button Common Styling */
+.btn {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Decrease Button (Coral Red Gradient) */
+.decrease {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+}
+
+.decrease:hover {
+    box-shadow: 0 6px 18px rgba(255, 65, 108, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Reset Button (Slate Grey) */
+.reset {
+    background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+}
+
+.reset:hover {
+    box-shadow: 0 6px 18px rgba(44, 62, 80, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Increase Button (Emerald Green Gradient) */
+.increase {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.increase:hover {
+    box-shadow: 0 6px 18px rgba(56, 239, 125, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Click Feedback Animation */
+.btn:active {
+    transform: scale(0.95) translateY(0);
+}
